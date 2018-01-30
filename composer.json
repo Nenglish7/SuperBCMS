@@ -16,6 +16,7 @@
         "ext-sodium",
         "routing",
         "controllers",
+        "kernel",
         "php-di",
         "php7",
     ],
