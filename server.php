@@ -18,3 +18,6 @@ if (file_exists(SYSTEM_ROOT . '/vendor/autoload.php'))
 }
 
 require SYSTEM_ROOT . '/vendor/autoload.php';
+require SYSTEM_ROOT . '/config/autoload.php';
+
+
