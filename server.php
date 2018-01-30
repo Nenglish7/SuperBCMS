@@ -8,10 +8,8 @@
  * @license <https://github.com/Nenglish7/SuperBCMS/blob/master/LICENSE> MIT license.
  */
 
-// Define the system root.
 define('SYSTEM_ROOT', __DIR__);
 
-// Check to see if composer was ran.
 if (file_exists(SYSTEM_ROOT . '/vendor/autoload.php'))
 {
     throw new RuntimeException(
@@ -19,11 +17,7 @@ if (file_exists(SYSTEM_ROOT . '/vendor/autoload.php'))
     );
 }
 
-// Require composer and config autoload.
 require SYSTEM_ROOT . '/vendor/autoload.php';
-require SYSTEM_ROOT . '/config/autoload.php';
-
-// Lazy load the config details.
-Config\Autoloader::Register();
+require SYSTEM_ROOT . '/config.php';
 
 
