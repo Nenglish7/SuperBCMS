@@ -18,7 +18,7 @@
         "controllers",
         "kernel",
         "php-di",
-        "php7",
+        "php7"
     ],
     "description": "A fast and secure by default content management system.",
     "homepage": "Nenglish7/SuperBCMS",
