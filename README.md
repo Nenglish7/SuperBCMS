@@ -1,2 +1,1 @@
-# SuperBCMS
-A fast and secure by default content management system.
+[![Build Status](https://travis-ci.org/Nenglish7/SuperBCMS.svg?branch=master)](https://travis-ci.org/Nenglish7/SuperBCMS)
