@@ -3,3 +3,7 @@ application:
     secret: %[SUPERB]
     debug: true
     log: true
+cookie:
+    path: /
+    domain: localhost
+    secure: false
