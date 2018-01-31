@@ -33,7 +33,7 @@ interface CookieInterface
      *
      * @return void.
      */
-    public function store($name, $value, $expire): void;
+    public function store(string $name, $value, int $expire): void;
     
     /**
      * Fetch a cookie by name.
@@ -42,7 +42,7 @@ interface CookieInterface
      *
      * @return mixed The cookie value.
      */
-    public function fetch($name);
+    public function fetch(string $name);
     
     /**
      * Delete a cookie by name.
@@ -51,6 +51,6 @@ interface CookieInterface
      *
      * @return void.
      */
-    public function fetch($name): void;
+    public function fetch(string $name): void;
     
 }
