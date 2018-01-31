@@ -1,0 +1,5 @@
+application:
+    name: SuperB
+    secret: %[SUPERB]
+    debug: true
+    log: true
