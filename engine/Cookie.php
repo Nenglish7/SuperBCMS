@@ -83,7 +83,7 @@ class Cookie implements CookieInterface
      *
      * @return void.
      */
-    public function fetch(string $name): void
+    public function delete(string $name): void
     {
         if (isset($_COOKIE[$name]))
         {
