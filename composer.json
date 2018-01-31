@@ -45,7 +45,8 @@
         "psr-4": {
             "Nenglish7\\Engine\\": "./engine",
             "Nenglish7\\App\\": "./app"
-        }
+        },
+        "files": ["./server.php"]
     },
     "suggest": {
         "egulias/email-validator": "Provides strict email validation. This is recommended."
