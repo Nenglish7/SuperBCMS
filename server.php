@@ -17,7 +17,7 @@ if (file_exists(SYSTEM_ROOT . '/vendor/autoload.php'))
 {
     trigger_error('You need to run composer install or else the system will not run.', E_USER_ERROR);
 }
-require SYSTEM_ROOT . '/vendor/autoload.php';
+require_once SYSTEM_ROOT . '/vendor/autoload.php';
 try
 {
     $config = Yaml::parseFile(SYSTEM_ROOT . '/config.yaml');
