@@ -20,8 +20,6 @@ interface CookieInterface
     /**
      * Set the cookie encryption key.
      *
-     * @codeCoverageIgnore
-     *
      * @return void.
      */
     function __construct();
@@ -32,8 +30,6 @@ interface CookieInterface
      * @param string $name   The name of the cookie.
      * @param mixed  $value  The cookie value.
      * @param int    $expire The cookie expiration time.
-     * 
-     * @codeCoverageIgnore
      *
      * @return void.
      */
@@ -44,8 +40,6 @@ interface CookieInterface
      *
      * @param string $name The name of the cookie.
      *
-     * @codeCoverageIgnore
-     *
      * @return mixed The cookie value.
      */
     public function fetch($name);
@@ -54,8 +48,6 @@ interface CookieInterface
      * Delete a cookie by name.
      *
      * @param string $name The name of the cookie.
-     *
-     * @codeCoverageIgnore
      *
      * @return void.
      */
