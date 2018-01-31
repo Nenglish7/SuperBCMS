@@ -17,6 +17,8 @@ use ParagonIE\Halite\HiddenString;
 
 /**
  * Cookie.
+ *
+ * @codeCoverageIgnore
  */
 class Cookie implements CookieInterface
 {
@@ -28,8 +30,6 @@ class Cookie implements CookieInterface
     
     /**
      * Set the cookie encryption key.
-     *
-     * @codeCoverageIgnore
      *
      * @return void.
      */
@@ -44,8 +44,6 @@ class Cookie implements CookieInterface
      * @param string $name   The name of the cookie.
      * @param mixed  $value  The cookie value.
      * @param int    $expire The cookie expiration time.
-     * 
-     * @codeCoverageIgnore
      *
      * @return void.
      */
@@ -59,8 +57,6 @@ class Cookie implements CookieInterface
      *
      * @param string $name The name of the cookie.
      *
-     * @codeCoverageIgnore
-     *
      * @return mixed The cookie value.
      */
     public function fetch($name)
@@ -72,8 +68,6 @@ class Cookie implements CookieInterface
      * Delete a cookie by name.
      *
      * @param string $name The name of the cookie.
-     *
-     * @codeCoverageIgnore
      *
      * @return void.
      */
