@@ -9,6 +9,6 @@ cookie:
     secure: false
 session:
     sip:
-    sh:
+    sh: files
     checks: all
     token: 
