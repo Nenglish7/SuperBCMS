@@ -1,7 +1,7 @@
 application:
     name: SuperB
     secret: %[SUPERB]
-    debug: true
+    debug: false
     log: true
 cookie:
     path: /
