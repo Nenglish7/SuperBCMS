@@ -13,7 +13,7 @@ use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 
 define('SYSTEM_ROOT', __DIR__);
-if (file_exists(SYSTEM_ROOT . '/vendor/autoload.php'))
+if (!file_exists(SYSTEM_ROOT . '/vendor/autoload.php'))
 {
     trigger_error('You need to run composer install or else the system will not run.', E_USER_ERROR);
 }
