@@ -13,16 +13,11 @@ use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 
 define('SYSTEM_ROOT', __DIR__);
-
 if (file_exists(SYSTEM_ROOT . '/vendor/autoload.php'))
 {
-    throw new RuntimeException(
-        'You need to run composer install or else the system will not run.'
-    );
+    trigger_error('You need to run composer install or else the system will not run.', E_USER_ERROR);
 }
-
 require SYSTEM_ROOT . '/vendor/autoload.php';
-
 try
 {
     $config = Yaml::parseFile(SYSTEM_ROOT . '/config.yaml');
