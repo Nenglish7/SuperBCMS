@@ -35,7 +35,12 @@ class Cookie implements CookieInterface
      */
     function __construct()
     {
-        $this->cookieController = new CookieController(new EncryptionKey(new HiddenString(\CONFIG['application']['secret'])));
+        $this->cookieController = new CookieController(
+            new EncryptionKey(
+            new HiddenString(
+                \CONFIG['application']['secret']
+            )
+        ));
     }
     
     /**
@@ -49,7 +54,14 @@ class Cookie implements CookieInterface
      */
     public function store($name, $value, $expire): void
     {
-        $this->cookieController->store($name, $value, $expire, \CONFIG['cookie']['path'], \CONFIG['cookie']['domain'], \CONFIG['cookie']['secure']);
+        $this->cookieController->store(
+            $name,
+            $value,
+            $expire,
+            \CONFIG['cookie']['path'],
+            \CONFIG['cookie']['domain'],
+            \CONFIG['cookie']['secure']
+        );
     }
     
     /**
@@ -76,8 +88,15 @@ class Cookie implements CookieInterface
         if (isset($_COOKIE[$name]))
         {
             unset($_COOKIE[$name]);
-            
-            \setcookie($name, '', \time() - 42000, \CONFIG['cookie']['path'], \CONFIG['cookie']['domain'], \CONFIG['cookie']['secure'], \true);
+            \setcookie(
+                $name,
+                '',
+                \time() - 42000,
+                \CONFIG['cookie']['path'],
+                \CONFIG['cookie']['domain'],
+                \CONFIG['cookie']['secure'],
+                \true
+            );
         }
     }
     
