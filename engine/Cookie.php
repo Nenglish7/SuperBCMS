@@ -11,9 +11,11 @@ declare(strict_types=1);
  
 namespace Nenglish7\Engine;
 
-use ParagonIE\Halite\Cookie as CookieController;
-use ParagonIE\Halite\Symmetric\EncryptionKey;
-use ParagonIE\Halite\HiddenString;
+use ParagonIE\Halite\{
+    Cookie as CookieController,
+    Symmetric\EncryptionKey,
+    HiddenString
+};
 
 /**
  * Cookie.
