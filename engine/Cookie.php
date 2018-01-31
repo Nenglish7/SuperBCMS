@@ -61,7 +61,7 @@ class Cookie implements CookieInterface
      */
     public function fetch($name)
     {
-        $this->cookieController->fetch($name);
+        return $this->cookieController->fetch($name);
     }
     
     /**
