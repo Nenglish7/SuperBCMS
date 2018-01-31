@@ -31,7 +31,7 @@
         }
     ],
     "require": {
-        "php": "^7",
+        "php": "^7.2",
         "symfony/yaml": "^4",
         "symfony/console": "^4",
         "symfony/process": "^4",
