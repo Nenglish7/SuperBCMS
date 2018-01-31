@@ -52,7 +52,7 @@ class Cookie implements CookieInterface
      *
      * @return void.
      */
-    public function store($name, $value, $expire): void
+    public function store(string $name, $value, int $expire): void
     {
         $this->cookieController->store(
             $name,
@@ -71,7 +71,7 @@ class Cookie implements CookieInterface
      *
      * @return mixed The cookie value.
      */
-    public function fetch($name)
+    public function fetch(string $name)
     {
         return $this->cookieController->fetch($name);
     }
@@ -83,7 +83,7 @@ class Cookie implements CookieInterface
      *
      * @return void.
      */
-    public function fetch($name): void
+    public function fetch(string $name): void
     {
         if (isset($_COOKIE[$name]))
         {
