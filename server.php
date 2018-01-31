@@ -9,6 +9,9 @@ declare(strict_types=1);
  * @license <https://github.com/Nenglish7/SuperBCMS/blob/master/LICENSE> MIT license.
  */
 
+use Symfony\Component\Yaml\Exception\ParseException;
+use Symfony\Component\Yaml\Yaml;
+
 define('SYSTEM_ROOT', __DIR__);
 
 if (file_exists(SYSTEM_ROOT . '/vendor/autoload.php'))
@@ -19,6 +22,13 @@ if (file_exists(SYSTEM_ROOT . '/vendor/autoload.php'))
 }
 
 require SYSTEM_ROOT . '/vendor/autoload.php';
-require SYSTEM_ROOT . '/config.php';
 
-
+try
+{
+    $config = Yaml::parseFile(SYSTEM_ROOT . '/config.yaml');
+    define('CONFIG', $config);
+} catch (ParseException $e)
+{
+    printf('Unable to parse the YAML config file: %s', $e->getMessage());
+    exit;
+}
