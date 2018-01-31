@@ -7,3 +7,8 @@ cookie:
     path: /
     domain: localhost
     secure: false
+session:
+    sip:
+    sh:
+    checks: all
+    token: 
