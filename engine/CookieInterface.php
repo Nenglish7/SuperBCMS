@@ -51,6 +51,6 @@ interface CookieInterface
      *
      * @return void.
      */
-    public function fetch(string $name): void;
+    public function delete(string $name): void;
     
 }
