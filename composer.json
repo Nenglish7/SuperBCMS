@@ -40,8 +40,8 @@
         "symfony/polyfill-php70": "*",
         "symfony/console": "^3|^4",
         "symfony/process": "^3|^4",
-        "paragonie/halite": "^3|^4.3",
-        "paragonie/csp-builder": "^2.3",
+        "paragonie/halite": "^2|^3|^4.",
+        "paragonie/csp-builder": "^2",
         "paragonie/sodium_compat": "*",
         "psr/container": "*",
         "psr/log": "*"
